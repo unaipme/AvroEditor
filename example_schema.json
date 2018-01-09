@@ -1,0 +1,36 @@
+{
+	"name": "algo",
+	"type": "record",
+	"fields": [
+		{
+			"name": "list",
+			"type": {
+				"type": "array",
+				"items": {
+					"name": "listel",
+					"type": "record",
+					"fields": [
+						{
+							"name": "number",
+							"type": "int"
+						}
+					]
+				}
+			}
+		},
+		{
+			"name": "fav",
+			"type": "listel"
+		},
+		{
+			"name": "matrix",
+			"type": {
+				"type": "array",
+				"items": {
+					"type": "array",
+					"items": "int"
+				}
+			}
+		}
+	]
+}
